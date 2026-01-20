@@ -1,0 +1,94 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+
+    .winner {
+      color: #667eea;
+      
+      margin-bottom: 30px;
+      font-size: 1.6em;
+    }
+
+    .boxes {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 10px;
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #f0f0f0;
+      border: 2px solid #667eea;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 2.2em;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+     .drawGame{
+        color: #ff6b6b;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px 0;
+      }
+    .boxe:hover {
+      background: #e0e0ff;
+      transform: scale(1.05);
+    }
+
+    button {
+      padding: 12px 30px;
+      font-size: 1.1em;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #764ba2;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
